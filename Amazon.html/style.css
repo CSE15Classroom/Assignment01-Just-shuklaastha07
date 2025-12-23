@@ -117,7 +117,7 @@ span{
 }
 /* Main Section */
 .main-section{
-    background-image: url(Image1.jpg);
+    background-image: url(Image\ 1.jpg);
     height: 350px;
     background-size: cover;
     display: flex;
@@ -224,4 +224,28 @@ ul a{
 #top .foot-panel1 a{
     scroll-behavior: smooth;
     color: white;
+}
+@media only screen and (max-width: 768px){
+    .shop{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .nav-search{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .nav-search{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 320px){
+    .search-input{
+        width: 80%;
+    }
 }
